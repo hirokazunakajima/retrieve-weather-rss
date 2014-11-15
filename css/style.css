@@ -1,0 +1,54 @@
+body{
+    font-family: helvetica, arial,sans-serif;
+    font-size: 14px;
+}
+
+.centered{
+
+    height: 200px;
+    width: 300px;
+    margin-top: -100px;
+    margin-left: -150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    box-sizing: border-box;
+
+    /* use flex property to get child centered position */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px dotted #ccc;
+}
+
+ul,p{
+    padding-left: 0;
+    list-style-type: none;
+    width: 220px;
+    margin: auto;
+    word-break: break-all;
+}
+
+li{
+    line-height: 1.5;
+}
+
+input[type=button]{
+    margin-top: 10px;
+    width: 100%;
+}
