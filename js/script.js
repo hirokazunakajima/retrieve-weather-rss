@@ -45,10 +45,10 @@ function loadWeather() {
         url: "dynamic_proxy.php",
         data: { src: source },
         success: function (response) {
-            console.log(response);
 
+            //  escape ":" to access name space
             var $condition = $(response).find("yweather\\:condition");
-
+            // if couldn't get data, try in another way
             if ($condition.length === 0) {
                 $condition = $(response).find("condition");
             }

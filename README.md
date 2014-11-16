@@ -1,5 +1,5 @@
 # Retrieving weather rss and display
-===========
+===
 
 ![Alt text](screenshot.jpg)
 
@@ -13,8 +13,8 @@
 
 ### What is it working in behind?
 
-1. when you change location or press Refresh, one event will be run
-2. script will go and grab data from __Yahoo weather RSS__ through the dynamic_proxy.php asynchronously
-3. dynamic_proxy.php will return xml type data
+1. when you change location or press refresh, ajax will be run
+2. script will go and grab data from __Yahoo weather RSS__ through the `dynamic_proxy.php` asynchronously
+3. `dynamic_proxy.php` will return XML type data
 4. find temperature and condtion attribute from response and grab data 
-5. data will display
+5. display(swap) data
